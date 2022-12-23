@@ -1,0 +1,8 @@
+import java.util.*;
+  class Solution {
+    public int removeElement(int[] nums, int val) {
+        for(int i = 0, j = 0; ; i++)
+            if(i == nums.length) return j;
+            else if(nums[i] != val) nums[j++] = nums[i];
+    }
+}
